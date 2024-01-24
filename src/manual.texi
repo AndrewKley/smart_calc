@@ -1,0 +1,108 @@
+\input texinfo
+@setfilename manual
+@settitle SmartCalc_v1.0 manual
+@documentencoding UTF-8
+
+@copying
+Copyright @copyright{} 2023 jupitere 
+@end copying
+
+@titlepage
+@title SmartCalc_v1.0
+@page
+@vskip 0pt plus 1filll
+@insertcopying
+@end titlepage
+
+@node Top
+@top SmartCalc_v1.0 manual
+
+This is a SmartCalc_v1.0 manual.
+
+@menu
+* General information::    This section provides general information about the calculator.
+* Arithmetic operations::  This section provides the list of implemented arithmetic operations.
+* Mathematical functions:: This section provides the list of implemented mathematical functions.
+* Plots::  This section provides information about the possibility of plotting functions.
+@end menu
+
+@node General information
+@chapter General information
+
+@itemize @bullet
+@item
+The calculator is developed in the C/C++ programming language using the QT version 6.
+@item
+The program calculates arbitrary bracketed arithmetic expressions in infix notation.
+@item
+The program calculates arbitrary bracketed arithmetic expressions in infix notation with substitution of the value of the variable x as a number.
+@item
+Both integers and real numbers with a dot can be input into the program.
+@item
+The calculation in done done after you complete entering the calculating expression and press the = symbol.
+@item
+Users can enter up to 255 characters.
+@item
+Verifiable accuracy of the fractional part is at least to 7 decimal places.
+@end itemize
+
+@node  Arithmetic operations
+@chapter  Arithmetic operations
+Bracketed arithmetic expressions in infix notation support the following arithmetic operations:
+@multitable @columnfractions .6 .4
+@headitem Operator name @tab Infix notation
+@item Brackets @tab (a + b)
+@item Addition @tab a + b
+@item Subtraction @tab a - b 
+@item Multiplication @tab a * b
+@item Division  @tab a / b
+@item Power  @tab a ^ b
+@item Modulus  @tab a mod b
+@item Unary plus  @tab +a
+@item Unary minus  @tab -a
+@end multitable
+
+@node Mathematical functions
+@chapter Mathematical functions
+
+Bracketed arithmetic expressions in infix notation support the following mathematical functions:
+@multitable @columnfractions .3 .7
+@headitem Function @tab Function description
+@item cos(x) 
+@tab Computes cosine
+@item sin(x)
+@tab Computes sine
+@item tan(x)
+@tab Computes tangent
+@item acos(x)
+@tab Computes arc cosine
+@item asin(x)
+@tab Computes arc sine
+@item atan(x)
+@tab Computes arc tangent 
+@item sqrt(x)
+@tab Computes square root
+@item ln(x)
+@tab Computes natural logarithm
+@item log(x)
+@tab Computes common logarithm
+@end multitable
+
+@node Plots
+@chapter Plots
+@itemize @bullet
+@item
+The program can plot a graph of a function given by an expression in infix notation with the variable x (or without it).
+@item
+To plot a graph of a function a user must check the checkbox "graph" and press the = symbol.
+@item
+The displayed domain and codomain if [-10, 10] by default, but a user can additionally specify them.
+@item
+Domain and codomain of a function are limited to numbers from -1000000 to 1000000
+@item
+The calculation in done done after you complete entering the calculating expression and press the = symbol.
+@item
+Users have opportunity to autoset the displayed codomain with min and max of a given function if they exist but within [-1000000, 1000000].
+@end itemize
+
+@bye
